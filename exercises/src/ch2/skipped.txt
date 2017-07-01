@@ -1,0 +1,12 @@
+- Ex3 -> too similar to previous exercises, no new value
+
+- Ex4 -> same as above
+
+- Ex5 -> while different, the concept is the same:
+    -- grab the values from Scanner and use next to get each
+    -- do simple calculation and print results
+
+- Ex6 -> similar to above but the mod and floating point division
+    -- grab single value from Scanner
+    -- do % and / to get at each digit, add them all together
+    -- print to standard output
