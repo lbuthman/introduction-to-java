@@ -18,8 +18,6 @@ public class Ex2 {
 
         Tools.print("Enter the radius and length of a cylinder: ");
 
-        //String arg = input.next();
-
         double radius = input.nextDouble();
         double length = input.nextDouble();
 
