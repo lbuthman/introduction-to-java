@@ -1,7 +1,7 @@
 package tools;
 
 /**
- * Static tools to help with DRY
+ * Static tools to help with DRY principle
  */
 public class Tools {
 
