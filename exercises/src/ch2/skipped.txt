@@ -10,3 +10,9 @@
     -- grab single value from Scanner
     -- do % and / to get at each digit, add them all together
     -- print to standard output
+
+- Ex8 -> the challenge is learning an API for a specific use, but I can learn that as needed
+
+- Ex9 -> too similar to previous, just new math problem
+
+- Ex10-Ex17 -> same as above
