@@ -16,3 +16,8 @@
 - Ex9 -> too similar to previous, just new math problem
 
 - Ex10-Ex17 -> same as above
+
+- Ex18 -> challenge is formatting output, but Standard out formatting doesn't mean much to me right now
+
+- Ex19-23 -> too similar to previous, just new math problem
+
