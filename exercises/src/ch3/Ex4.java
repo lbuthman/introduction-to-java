@@ -67,6 +67,6 @@ public class Ex4 {
 
         }
 
-        Tools.println("Thanks for living your life! I will miss you!");
+        Tools.println("Thanks for living your life! I will miss you a lot!");
     }
 }
