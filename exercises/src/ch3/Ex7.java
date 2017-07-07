@@ -31,48 +31,61 @@ enum ChangeDenominations {
 }
 
 public class Ex7 {
-    public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
+    private static Scanner input = new Scanner(System.in);
+
+    private static String getIntString() {
+
+        String number = (input.nextDouble() * 100) + "";
+
+        return  number.replace(".0", "");
+    }
+
+    public static void main(String[] args) {
 
         Tools.print("Enter the total price: $");
 
         //add error catch
-        double total = input.nextDouble();
+        String number = getIntString();
+        int total = Integer.parseInt(number);
+
 
         Tools.print("Enter the customer payment amount: $");
 
-        //add error catch
-        double payment = input.nextDouble();
+        int payment;
 
-        while (payment < total) {
+        while (true) {
+            number = getIntString();
+            payment = Integer.parseInt(number);
+
+            if (payment >= total) {break;}
+
             Tools.println("I'm sorry, that payment is not enough.");
-            Tools.println("Please enter the new customer payment amount: $");
-            payment = input.nextDouble();
+            Tools.print("Please enter the new customer payment amount: $");
         }
 
         Tools.println("Calculating change due ...");
 
-        double changeDue = payment - total;
+        int changeDue = payment - total;
 
-        while (changeDue >= 0.009) {
-            if (changeDue >= 1.0) {
+        while (changeDue >= 0) {
+            if (changeDue >= 100) {
                 ChangeDenominations.Dollar.plusOne();
-                changeDue -= 1.0;
-            } else if (changeDue >= .25) {
+                changeDue -= 100;
+            } else if (changeDue >= 25) {
                 ChangeDenominations.Quarter.plusOne();
-                changeDue -=.25;
-            } else if (changeDue >= .10) {
+                changeDue -=25;
+            } else if (changeDue >= 10) {
                 ChangeDenominations.Dime.plusOne();
-                changeDue -= .10;
-            } else if (changeDue >= .05) {
+                changeDue -= 10;
+            } else if (changeDue >= 5) {
                 ChangeDenominations.Nickel.plusOne();
-                changeDue -= .05;
-            } else if (changeDue >= .01) {
+                changeDue -= 5;
+            } else if (changeDue >= 1) {
                 ChangeDenominations.Penny.plusOne();
-                changeDue -= .01;
+                changeDue -= 1;
             } else {
-                changeDue -= .01;
+                changeDue -= 1;
             }
         }
 
