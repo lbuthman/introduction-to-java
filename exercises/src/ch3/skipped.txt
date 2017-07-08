@@ -1,0 +1,5 @@
+- Ex1-Ex3 - very similar to last chapter but with selection via If, no challenge
+
+- Ex5 - very similar to Ex4, I would again use Enum for Days
+
+- Ex6 - simple calculation and selection based on calculation
